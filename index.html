@@ -5,43 +5,55 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="Maria">
-<meta name="discription" content="Engineer">
+<meta name="description" content="Engineer">
 <link rel="stylesheet" href="style.css">
 <title>Information card</title>
+<nav class="nav">
+   <ul class="nav-list">
+     <li class="nav-item"><a href="#summary" class="nav-link">Summary</a></li>
+     <li class="nav-item"><a href="#social" class="nav-link">Social networks</a></li>
+     <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+     <li class="nav-item"><a href="#courses" class="nav-link">Courses</a></li>
+     <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+     <li class="nav-item"><a href="#code" class="nav-link">Code Example</a></li>
+     <li class="nav-item"><a href="#progects" class="nav-link">Projects</a></li>
+     <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+     <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+     <li class="nav-item"><a href="#send" class="nav-link">Send form</a></li>
+     <li>
+      <div class="country">
+         <div>
+         <img src="assets/img/flag.jpg" alt="flag" class="flag">
+         </div>
+            <div>
+            <a href="#" target="_blank">Ru</a>
+            </div>
+         </div>
+   </li>
+   </ul>
+ </nav>
 </head>
 <body>
-
-<div class="school">
-<a href="#" target="_blank">RSSCHOOL</a>
-</div>
-
-<div class="country">
-   <div>
-   <img src="jpg_giv/flag.jpg" alt="flag" class="flag">
-   </div>
-      <div>
-      <a href="#" target="_blank">Ru</a>
-      </div>
-</div>
-
-<div class="container">
-
-   <div class="info">
-<div class="info-text">
-<h2>Petrovskaya Maria Alexandrovna</h2>
+<main class="main-container">
+<div class="info">
+<div class="section" id="summary">
+<h1 class=".section-title">Petrovskaya Maria Alexandrovna</h1>
+<hr class="hr">
+<span>Marine Engineer</span>
+<h2 class=".section-title">Summary</h2>
 <p>
-I am a physicist by education, I graduated from
-St. Petersburg State Medical University in 2005
-with a degree in physics. Since 2005 I have been
-working as an engineer in the shipbuilding industry.
-I want to change and supplement my specialization,
-in particular, go into web design,
-try myself as a web developer.
-I have no programming experience,
-except for basic knowledge in html and css.
+   I am a physicist by education, I graduated from
+   St. Petersburg State Marine Technical University in 2005
+   with a degree in physics. Since 2005 I have been
+   working as an engineer in the shipbuilding industry.
+   I want to change and supplement my specialization,
+   in particular, go into web design,
+   try myself as a web developer.
+   I have no programming experience,
+   except for basic knowledge in HTML and CSS.
 </p>
-<div class="soc">
-<h3>Social networks</h3>
+<div class="soc" id="social">
+<h3 class=".section-title">Social networks</h3>
 <a href="https://vk.com/id398250" target="_blank">VK</a>
 |
 <a href="https://www.instagram.com/invites/contact/?i=1ifljqcz43vpl&utm_content=1txg7sb" target="_blank">Instagram</a>
@@ -50,30 +62,43 @@ except for basic knowledge in html and css.
 </div>
 </div>
 <div>
-<img src="jpg_giv/avatar.jpg" alt="My son" class="avatar">
+<img src="assets/img/avatar.jpg" alt="avatar" class="avatar">
 </div>
-   </div>
-
-   <div class="container1">
-   <div class="card bg-green">
-<h3 class="h3">Code example</h3>
-<p>
-function multiply(a, b)
-{return a * b}
-</p>
-<div>
-<h3>Courses</h3>
-<p>HTML, CSS Base "Result school"</p>
-<h3>Languages</h3>
-<p>Russian: native; English: B1
-</p>
 </div>
-   </div>
 
-   <div class="card bg-blue">
-<h3 class="h3">Contacts</h3>
-<table class="table">
+   <div class="container">
+<div class="section" id="courses">
+<ul><h3 class="section-title">Courses</h3>
+<li>HTML, CSS Base "Result school"</li></ul>
+<ul id="languages"><h3 class="section-title">Languages</h3>
+<li>Russian: native;</li>
+<li>English: B1
+</li>
+</ul>
+</div>
+<div class="section" id="code">
+   <h3 class="section-title">Code example</h3>
+   <pre>
+   function multiply(a, b)
+   {
+      return a * b
+   }
+   </pre>
+   <div id="projects">
+<ul><h3 class="section-title">Projects</h3>
+   <li><a href="https://mary190183.github.io/Cards/" target="_blank">Cards</a></li>
+   <li><a href="https://mary190183.github.io/slides/" target="_blank">Slides</a></li>
+   <li><a href="https://Mary190183.github.io/rsschool-cv/" target="_blank">CV</a></li>
+</ul>
+</div>
+</div>
+   <div class="section" id="contacts">
+<table class="table"><h3 class="section-title">Contacts</h3>
 <tbody>
+   <tr>
+      <td>Home</td>
+      <td>Sant-Petersburg, Russia</td>
+      </tr>
 <tr>
 <td>Phone</td>
 <td>+79214203242</td>
@@ -92,23 +117,33 @@ function multiply(a, b)
 </tr>
 </tbody>
 </table>
-   </div>
+</div>
+<div class="section" id="skills">
 
+<ul><h3 class="section-title">Skills</h3>
+<li>communication</li>
+<li>responsibility</li>
+<li>purposefulness</li>
+</ul>
+<div id="education">
+<h3 class="section-title">Education</h3>
+<li>St. Petersburg State Marine Technical University</li>
+</div>
 </div>
 
 </div>
 
-<div class="card bg-yellow">
+<div class="section" id="send">
    <form action="/" class="form">
       <div class="icons">
         <div>
-        <img src="jpg_giv/omlet.gif" alt="omlet" class="omlet">
+        <img src="assets/video/omlet.gif" alt="omlet" class="omlet">
         </div>
       <div>
-      <img src="jpg_giv/letter.jpg" alt="letter" class="letter">
+      <img src="assets/img/letter.jpg" alt="letter" class="letter">
       </div>
       </div>
-      <h1>Send form</h1>
+      <h2 class=".section-title">Send form</h2>
       <div class="form-row">
       <div class="form-group">
       <label for="name">Your name</label>
@@ -127,7 +162,14 @@ function multiply(a, b)
 
    </form>
    </div>
-
+</main>
+<footer class="footer">
+   <span><a href="https://Mary190183.github.io/rsschool-cv/" target="_blank">Mary190183</a>
+   12.06.2022</span>
+   <div><img src="assets/svg/rs_school_js.svg" alt="RSSCHOOL" class="rsschool"></div>
+   <div><a href="https://rs.school/js/" target="_blank">RSSCHOOL: JavaScript/Front-end</a></div>
+   </footer>
 </body>
+
 </html>
 
